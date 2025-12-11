@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Lucas Candia - Diseño Minimalista Oscuro - Copia de Trabajo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f0f4f8; }
+        .sidebar-bg { background-color: #1f2937; /* Gray 800 */ }
+        .accent-color { color: #facc15; /* Yellow/Amber for accent */ }
+        .border-accent { border-color: #facc15; }
+        .section-title-main { border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem; color: #1f2937; }
+        
+        /* Estilos específicos para la imagen de perfil */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #facc15; /* Marco de acento */
+        }
+        /* Estilo para los QR codes */
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            border-radius: 0.375rem; /* rounded-md */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12">
+    <div class="max-w-6xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
+        <!-- MODIFICACIÓN CLAVE: Cambiado de grid-cols-5 a flexbox con anchos relativos para mejor control de la distribución -->
+        <main class="flex flex-col lg:flex-row"> 
+            
+            <!-- BARRA LATERAL (40-45% Ancho en Desktop, Full en Móvil) -->
+            <!-- CLASE DE ANCHO AJUSTADA: w-full en móvil, lg:w-5/12 en escritorio -->
+            <div class="w-full lg:w-5/12 sidebar-bg text-white p-8 md:p-10 space-y-8">
+                
+                <!-- FOTO DE PERFIL -->
+                <div class="flex justify-center mb-6">
+                    <!-- Referencia a la imagen local. Asegúrate de que el archivo 'Foto_de_Lucas.jpg' esté en la misma carpeta que este archivo HTML. -->
+                    <img 
+                        src="foto_de_perfil_lucas.jpg" 
+                        alt="Foto de perfil de Lucas Candia" 
+                        class="profile-photo shadow-xl"
+                        onerror="this.onerror=null; this.src='https://placehold.co/150/1f2937/facc15?text=LC'"
+                    >
+                </div>
+
+                <!-- CABECERA & CONTACTO -->
+                <header class="pb-4 border-b border-gray-700">
+                    <h1 class="text-4xl font-extrabold uppercase tracking-wider">LUCAS CANDIA</h1>
+                    <p class="mt-1 text-lg font-light accent-color">Backend Python & Infraestructura IT</p>
+                </header>
+
+                <section class="space-y-4">
+                    <h2 class="text-xl font-bold accent-color border-b-2 border-accent pb-1 mb-3 uppercase">Contacto</h2>
+                    
+                    <!-- Información de Contacto Textual -->
+                    <div class="text-sm space-y-2">
+                        <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>San Rafael, Mendoza, Argentina</p>
+                        <a href="mailto:lucashk2003@yahoo.com.ar" class="flex items-center hover:text-gray-300 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>lucashk2003@yahoo.com.ar</a>
+                        
+                        <!-- LinkedIn Textual - Se añade 'text-xs' para reducir el tamaño de la fuente y evitar el salto de línea -->
+                        <a href="https://www.linkedin.com/in/lucas-candia-1788118b/" target="_blank" class="flex items-start hover:text-gray-300 transition text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.3 3H3.7A.7.7 0 003 3.7v12.6A.7.7 0 003.7 17h12.6a.7.7 0 00.7-.7V3.7a.7.7 0 00-.7-.7zM6.5 14.5h-2V7.4h2v7.1zM5.5 6.4a1 1 0 110-2 1 1 0 010 2zm11 8.1h-2v-3.7c0-.9-.3-1.6-1.2-1.6a1.3 1.3 0 00-1.2 1.3v3.8h-2V7.4h2v.8c.3-.6 1-.9 1.8-.9 2 0 2.2 1.3 2.2 3.2v3.8z" clip-rule="evenodd"/></svg>
+                            <span class="break-words">LinkedIn: https://www.linkedin.com/in/lucas-candia-1788118b/</span>
+                        </a>
+                        
+                        <!-- GitHub Textual - Se añade 'text-xs' para reducir el tamaño de la fuente y evitar el salto de línea -->
+                        <a href="https://github.com/lucashk2003" target="_blank" class="flex items-start hover:text-gray-300 transition text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-0.5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a8 8 0 00-2.5 15.6c.4 0 .5-.2.5-.4v-1.5c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.8.8.1-.6.4-1.1.7-1.3-2.2-.2-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.8-.1-.2-.4-1.3 0-2.7 0 0 .8-.3 2.7 1.1A9.5 9.5 0 0110 5.4c.8 0 1.6.1 2.3.3 1.9-1.4 2.7-1.1 2.7-1.1.4 1.4.1 2.5 0 2.7.6.8 1 1.7 1 2.8 0 3.8-2.3 4.7-4.5 4.9.4.4.5.9.5 1.5v2.2c0 .2.1.4.5.3A8 8 0 0010 2z" clip-rule="evenodd"/></svg>
+                            <span class="break-words">GitHub: https://github.com/lucashk2003</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Códigos QR -->
+                    <div class="mt-6 pt-4 border-t border-gray-700">
+                        <h3 class="text-lg font-bold accent-color mb-3 uppercase">Códigos QR</h3>
+                        <div class="flex flex-wrap gap-4 justify-around">
+                            <!-- LinkedIn QR - ANTES: image_98a97d.png | AHORA: image_98ac4d.png -->
+                            <div class="flex flex-col items-center text-center">
+                                <img 
+                                    src="linkedin.png" 
+                                    alt="Código QR de LinkedIn" 
+                                    class="qr-code bg-white p-1"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/1f2937/facc15?text=LinkedIn+QR';"
+                                >
+                                <span class="text-xs mt-1 text-gray-400">LinkedIn</span>
+                            </div>
+
+                            <!-- GitHub QR - ANTES: image_98ac4d.png | AHORA: image_98a97d.png -->
+                            <div class="flex flex-col items-center text-center">
+                                <img 
+                                    src="github.png" 
+                                    alt="Código QR de GitHub" 
+                                    class="qr-code bg-white p-1"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/1f2937/facc15?text=GitHub+QR';"
+                                >
+                                <span class="text-xs mt-1 text-gray-400">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- EDUCACIÓN (DETALLADA) -->
+                <section>
+                    <h2 class="text-xl font-bold accent-color border-b-2 border-accent pb-1 mb-3 uppercase">Educación</h2>
+                    <div class="text-sm space-y-3">
+                        <p>
+                            <span class="font-bold">Ingeniería en Sistemas de Información</span><br>
+                            <span class="text-xs text-gray-400">UTN - San Rafael (2022 - Presente)</span><br>
+                            <span class="text-xs text-gray-400">4to año completo. Foco en Algoritmos, Arquitectura de Software y BD.</span>
+                        </p>
+                        <p>
+                            <span class="font-bold">Ingeniería Industrial</span><br>
+                            <span class="text-xs text-gray-400">UTN - San Rafael (2003 - 2019)</span><br>
+                            <span class="text-xs text-gray-400">Cursado finalizado, Tesis en desarrollo (+50% completada).</span>
+                        </p>
+                        <p>
+                            <span class="font-bold">Técnico Electromecánico</span><br>
+                            <span class="text-xs text-gray-400">Escuela Industrial N° 2 (Título Obtenido)</span>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- IDIOMAS -->
+                <section>
+                    <h2 class="text-xl font-bold accent-color border-b-2 border-accent pb-1 mb-3 uppercase">Idiomas</h2>
+                    <p class="text-sm text-gray-300">
+                        <span class="font-bold">Español:</span> Nativo<br>
+                        <span class="font-bold">Inglés:</span> Intermedio (Lectura, escritura y comunicación oral funcional).
+                    </p>
+                </section>
+                
+                <!-- INTERESES PERSONALES (MOVIDO AQUÍ) -->
+                <section>
+                    <h2 class="text-xl font-bold accent-color border-b-2 border-accent pb-1 mb-3 uppercase">Intereses Personales</h2>
+                    <p class="text-gray-300 text-sm">
+                        Ciclismo de montaña, Escalada en roca, Música (Guitarra).
+                    </p>
+                </section>
+
+            </div>
+            
+            <!-- CONTENIDO PRINCIPAL (55-60% Ancho en Desktop) -->
+            <!-- CLASE DE ANCHO AJUSTADA: w-full en móvil, lg:w-7/12 en escritorio -->
+            <div class="w-full lg:w-7/12 p-8 md:p-10 space-y-8">
+                
+                <!-- PERFIL PROFESIONAL (MOVIDO AQUÍ) -->
+                <section>
+                    <h2 class="text-2xl font-bold section-title-main">PERFIL PROFESIONAL</h2>
+                    <p class="text-gray-700 leading-snug text-base">
+                        Profesional con una sinergia única entre <span class="font-semibold">15 años de experiencia en Infraestructura IT</span> y un enfoque reciente y sólido en <span class="font-semibold">Desarrollo Backend con Python y Flask</span>. Mi perfil combina la capacidad de entender y asegurar sistemas de infraestructura con el desarrollo de software y bases de datos relacionales (SQLAlchemy, PostgreSQL). Actualmente cursando Ingeniería en Sistemas, aporto rigor analítico, experiencia docente y una gran capacidad de resolución de problemas complejos. Busco un rol Full-Stack donde pueda potenciar este conocimiento híbrido.
+                    </p>
+                </section>
+
+                <!-- HABILIDADES (MOVIDO AQUÍ) -->
+                <section>
+                    <h2 class="text-2xl font-bold section-title-main">HARD SKILLS</h2>
+                    <ul class="text-base list-disc list-outside ml-4 text-gray-700 space-y-1">
+                        <li><span class="font-bold">Python & Flask:</span> Desarrollo API REST, ORM (SQLAlchemy), Testing.</li>
+                        <li><span class="font-bold">BD & SQL:</span> MySQL, PostgreSQL, diseño de esquemas y transacciones.</li>
+                        <li><span class="font-bold">Redes & Ops:</span> Gestión de infraestructura de red, Docker, Git.</li>
+                        <li><span class="font-bold">Metodologías:</span> Scrum, POO, Testing Unitario.</li>
+                    </ul>
+                </section>
+
+
+                <!-- EXPERIENCIA PROFESIONAL -->
+                <section>
+                    <h2 class="text-2xl font-bold section-title-main">EXPERIENCIA PROFESIONAL</h2>
+
+                    <!-- 1. Docencia IT -->
+                    <div class="mb-6 border-l-4 border-accent pl-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Docente Auxiliar de Cátedra & Instructor Python</h3>
+                        <p class="accent-color text-base">UTN - Ingeniería en Sistemas | 2021 - 2022</p>
+                        <ul class="list-disc list-outside ml-4 text-gray-600 text-sm mt-2 space-y-1">
+                            <li>Docente Auxiliar en la Cátedra "Algoritmos y Estructura de Datos".</li>
+                            <li>Instructor en Diplomaturas y Cursos de Programación en Python (Res. Rect. N° 74-2022).</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 2. Administrador de Redes -->
+                    <div class="mb-6 border-l-4 border-accent pl-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Administrador de Redes y Soporte IT</h3>
+                        <p class="accent-color text-base">Escuela | 2010 - Presente (15 años)</p>
+                        <ul class="list-disc list-outside ml-4 text-gray-600 text-sm mt-2 space-y-1">
+                            <li>Gestión y mantenimiento de infraestructura de red.</li>
+                            <li>Tareas de configuración de equipos de red y routers, buscando siempre la estabilidad y seguridad.</li>
+                            <li>Montaje de cableado estructurado y soporte técnico de hardware.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- PROYECTOS DE DESARROLLO -->
+                <section>
+                    <h2 class="text-2xl font-bold section-title-main">PROYECTOS BACKEND (PYTHON/FLASK)</h2>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg text-gray-800">Sistema de Gestión de Turnos para Gimnasio</h4>
+                        <p class="text-sm text-gray-500 italic mb-1">Stack: Python, Flask, SQLAlchemy, MySQL</p>
+                        <p class="text-sm text-gray-700">Diseño y desarrollo de una aplicación web con API REST, autenticación multi-rol y persistencia de datos.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800">Sistema de Reservas de Cabañas (RentCabins)</h4>
+                        <p class="text-sm text-gray-500 italic mb-1">Stack: Python, Flask, SQLAlchemy, PostgreSQL</p>
+                        <p class="text-sm text-gray-700">Plataforma de reservas con gestión de disponibilidad en tiempo real y flujo de aprobación.</p>
+                    </div>
+                </section>
+                
+                <!-- INVESTIGACIÓN & ACADEMIA -->
+                <section>
+                    <h2 class="text-2xl font-bold section-title-main">INVESTIGACIÓN & ACADEMIA</h2>
+                    <div class="mb-4">
+                        <ul class="list-disc list-outside ml-4 text-gray-600 text-sm mt-2 space-y-2">
+                            <li><span class="font-bold">Investigador Categorizado (G) | GFQSC (2005-2018):</span> Publicación científica revisada por pares en revista indexada (*Int. J. Mod. Phys. C*).</li>
+                            <li>Experiencia en modelado matemático y desarrollo de simulaciones computacionales con C.</li>
+                            <li>Participación en proyectos PID y múltiples congresos nacionales de física.</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
